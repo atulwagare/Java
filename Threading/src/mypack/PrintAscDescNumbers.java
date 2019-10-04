@@ -8,11 +8,11 @@ public class PrintAscDescNumbers {
 	 
 	boolean desc;
 	int count = 1;
-	private int countDesc = 50;
+	private int countDesc = 30;
  
 	public void printAsc() {
 		synchronized (this) {
-			while (count <= 50) {
+			while (count <= 30) {
 				while (!desc) {
 					try {
 						wait();
